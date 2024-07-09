@@ -111,8 +111,8 @@ public class Apptests {
 		String sql = " update tbl_student";
 		sql += " set    std_name = nvl('" + svo.getStdName() + "', std_name)";
 		sql += "       ,std_phone = nvl('" + svo.getStdPhone() + "', std_phone)";
-		sql += "       ,address = nvl('" + svo.getStdPhone() + "', address)";
-		sql += "       ,birth_date = nvl(to_date('" + svo.getBirthDate() + "', birth_date))";
+		sql += "       ,address = nvl('" + svo.getAddress() + "', address)";
+		sql += "       ,birth_date = nvl(to_date('" + svo.getBirthDate() + "', yyyy-mm-dd),birth_date)";
 		sql += "  where std_no = '" + svo.getStdNo() + "'";
 		try {
 			Statement stmt = conn.createStatement();

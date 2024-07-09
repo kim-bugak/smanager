@@ -7,8 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-//DB connection 기능
-
+//DB connection (연결 기능)
+//오라클에서 가지고옴
 public class DAO {
 	Connection conn = null;
 	Statement stmt;
